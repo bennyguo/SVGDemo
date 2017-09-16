@@ -1,2 +1,4 @@
 # SVGDemo
-Simple svg demo using Snap.svg.
+- Simple use of blockly widgets
+- Svg manipulation using Snap.svg
+- Flex layout(recommended)
