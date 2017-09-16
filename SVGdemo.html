@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG Demo</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- div that contains blockly -->
+        <!-- initialized in index.js -->
+        <div id="blockly-canvas"></div>
+        <!-- this xml this required for blockly -->
+        <!-- you could refer to the blockly website for more details -->
+        <xml id="toolbox" style="display: none">
+            <block type="controls_if"></block>
+            <block type="controls_repeat_ext"></block>
+            <block type="logic_compare"></block>
+            <block type="math_number"></block>
+            <block type="math_arithmetic"></block>
+            <block type="text"></block>
+            <block type="text_print"></block>
+        </xml>
+        <!-- svg here -->
+        <svg id="svg-canvas"></svg>
+    </div>
+    <!-- blockly related js -->
+    <script src="blockly/blockly_compressed.js"></script>
+    <script src="blockly/blocks_compressed.js"></script>
+    <script src="blockly/en.js"></script>
+    <!-- jquery -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!-- snap -->
+    <script src="https://cdn.bootcss.com/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <!-- my code -->
+    <script src="index.js"></script>
+</body>
+</html>
